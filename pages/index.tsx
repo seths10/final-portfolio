@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import About from '../components/About';
+import ContactMe from '../components/ContactMe';
 import Experience from '../components/Experience';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   return (
@@ -13,10 +16,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
+      <Header />
 
       <section id='hero' className='snap-start'>
-        <Hero/>
+        <Hero />
       </section>
 
       <section id='about' className='snap-center'>
@@ -27,11 +30,17 @@ const Home: NextPage = () => {
         <Experience />
       </section>
 
-      {/* Skills */}
+      <section id='skills' className='snap-start'>
+        <Skills />
+      </section>
 
-      {/* Projects */}
+      <section id='projects' className='snap-start'>
+        <Projects />
+      </section>
 
-      {/* Contact Me */}
+      <section id='contact-me' className='snap-center'>
+        <ContactMe />
+      </section>
 
     </div>
   );
