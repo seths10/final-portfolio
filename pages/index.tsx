@@ -13,20 +13,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Header */}
       <Header/>
 
-      {/* Hero */}
       <section id='hero' className='snap-start'>
         <Hero/>
       </section>
 
-      {/* About */}
       <section id='about' className='snap-center'>
         <About />
       </section>
 
-      {/* Experience */}
       <section id='experience' className='snap-center'>
         <Experience />
       </section>

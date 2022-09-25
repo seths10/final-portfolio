@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import me from '../assets/me.jpg';
 
 type Props = {};
 
@@ -16,7 +18,7 @@ export default function Hero({ }: Props) {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src="../assets/me2.jpeg" alt="me" />
+            <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src='' alt="me" />
             
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
