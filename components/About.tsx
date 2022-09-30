@@ -41,7 +41,7 @@ export default function About({ pageInfo }: Props) {
         <h4 className='text-4xl font-semibold'>
           Here is a {" "}<span className='underline decoration-[#F7AB0A]/50'>bit</span>{" "} about me
         </h4>
-        <p className='text-base'>{pageInfo.backgroundInformation}</p>
+        <p className='text-base'>{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   )

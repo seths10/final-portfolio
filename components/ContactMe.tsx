@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { PageInfo } from '../typings';
@@ -37,17 +36,17 @@ function ContactMe({ pageInfo }: Props) {
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>{pageInfo.phoneNumber}</p>
+            <p className='text-2xl'>{pageInfo?.phoneNumber}</p>
           </div>
 
           <div className='flex items-center space-x-5 justify-center'>
             <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>{pageInfo.email}</p>
+            <p className='text-2xl'>{pageInfo?.email}</p>
           </div>
 
           <div className='flex items-center space-x-5 justify-center'>
             <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-            <p className='text-2xl'>{pageInfo.address}</p>
+            <p className='text-2xl'>{pageInfo?.address}</p>
           </div>
         </div>
 
